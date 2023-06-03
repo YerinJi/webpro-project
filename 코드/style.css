@@ -213,15 +213,11 @@ ul.imgs li{
 }
 
 /* ex_box */
-.scroll{
-    overflow-x: scroll;
-    overflow-y: hidden;
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-left: 20px;
+.ex_title{
+    padding-left: 40px;
 }
+
 .ex__box{
-    margin-right: -40px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -260,4 +256,5 @@ ul {
 }
 li {
     display: list-item;
+    width: 320px;
 }
