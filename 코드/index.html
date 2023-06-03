@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>환경보호 넛지</title>
-    <link rel="stylesheet" href="/코드/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/코드/style.css">
 </head>
 <body style="overflow-x: hidden;">
     <header class="home__header">
@@ -58,40 +62,23 @@
             <label for="slide4">&nbsp;</label>
         </div>
     </div>
-
-    <div>
-        <section style="background-color: #070707;">
-            <div class="earth__img">
-                <img class="earth" src="/media/earth.jpg" height="650px">
-            </div>
-            <div class="earth__text">
-                <h1>환경오염 심각하다~ </h1>
-                <span>ddd</span>
-            </div>
-        </section>
+    <!-- clock graph -->
+    
+    <div class="clock__graph">
+        <div class="clock__container">
+            <img src="/media/환경시계.png"><br>
+            <h1><span>환경위기시계 <br>: 지구환경 파괴에 따라 인류 생존의 위기감을 시간으로 표현한 것</span></h1>
+        </div>
+    </div>
+        <div class="graph__container">
+            <h1><span>환경위기시계 <br>: 지구환경 파괴에 따라 인류 생존의 위기감을 시간으로 표현한 것</span></h1>
+            <div class="chart graph1"><span class="center">2010  </span>9:19</div>
+            <div class="chart graph2"><span class="center">2021</span>9:42</div>
+            <div class="chart graph3"><span class="center">2022</span>9:35</div>
+            <div class="chart graph4"><span class="center">2023</span>??:??</div>
+        </div>
     </div>
 
-    <div>
-        <section style="height: 400px; padding-top: 50px;" id="stat_box">
-            <div class="stat_text">
-                <h1><span class="green">[2021 국민환경의식조사]</span> <br><br>
-                    <span class="small">환경오염 방지 노력에 대한 설문 결과</span><br>
-                    <span>"자연환경 및 환경보전 활동 참여율 저조"</span><br><br><br>
-                    <div class="btn_box">
-                        <a href="#" class="btn">자세히 알아보기</a>
-                    </div>
-                </h1>
-            </div>
-            <div class="graph stack2">
-                <strong>2022</strong>
-                <span>31.8%</span>
-            </div>
-            <div class="graph stack1">
-                <strong>2020</strong>
-                <span>33.4%</span>
-            </div>
-        </section>
-    </div>
     <!-- 사례 홈페이지 -->
     <section class="ex__section">
         <div class="ex_title">
@@ -100,7 +87,7 @@
         <div>
             <section class="ex__section_sub">
             <ul class="ex__box">
-                <li>
+                <li class="img__list">
                     <div class="img">
                         <img src="/media/ex__box/사례1__벽화.jpg" width="200px">
                     </div>
@@ -110,7 +97,7 @@
                         </p>
                     </div>
                 </li>
-                <li>
+                <li class="img__list">
                     <div class="img">
                         <img src="/media/ex__box/사례2__화단.png" width="200px">
                     </div>
@@ -119,7 +106,7 @@
                         <p>화단을 설치함으로써 깨끗한 거리를 <br>조성할 수 있었다.</p>
                     </div>
                 </li>
-                <li>
+                <li class="img__list">
                     <div>
                         <img src="/media/Home.png" width="100">
                     </div>
@@ -132,7 +119,7 @@
             </section>
             <section class="ex__section_sub">
                 <ul class="ex__box">
-                <li>
+                <li class="img__list">
                     <div>
                         <img src="/media/Home.png" width="100">
                     </div>
@@ -141,7 +128,7 @@
                         <p>설명설명</p>
                     </div>
                 </li>
-                <li>
+                <li class="img__list">
                     <div>
                         <img src="/media/Home.png" width="100">
                     </div>
@@ -150,7 +137,7 @@
                         <p>설명설명</p>
                     </div>
                 </li>
-                <li>
+                <li class="img__list">
                     <div>
                         <img src="/media/Home.png" width="100">
                     </div>
@@ -166,5 +153,6 @@
             </div>
         </div>
     </section>
+    <script src="/코드/index.js"></script>
 </body>
 </html>
