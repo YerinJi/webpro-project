@@ -123,6 +123,18 @@ ul.imgs li{
     z-index: 1;
 }
 
+/* earth */
+
+.earth__img {
+    display: inline-block;
+    vertical-align: top;
+    opacity: 0.5;
+}
+.earth__text {
+    color: white;
+    display: inline-block;
+}
+
 /* statistic */
 .graph{
     margin: 25px;
