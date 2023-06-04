@@ -207,6 +207,12 @@ span.center {
 }
 
 /* ex_box */
+.ex__section{
+    display: block;
+    margin:0 auto;
+    text-align: center;
+    position: relative;
+}
 .ex_title{
     padding-left: 40px;
 }
@@ -214,6 +220,8 @@ span.center {
 .ex__box{
     display: flex;
     flex-wrap: wrap;
+    margin:0 auto;
+    justify-content: center;
 }
 
 .ex__section .ex__box li {
@@ -244,4 +252,7 @@ span.center {
 .img__list {
     display: list-item;
     width: 320px;
+}
+.img img{
+    width: 200px;
 }
