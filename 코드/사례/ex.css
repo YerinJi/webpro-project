@@ -53,3 +53,30 @@ nav {
 a { 
     text-decoration-line: none;
 }
+
+/* text */
+
+
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2 {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    text-align: center;
+    font-size: 40px;
+}
+
+img {
+    height: 500px;
+    display: block;
+    margin: auto;
+    padding-bottom: 40px;
+}
+p {
+    text-align: center;
+    font-size: 17px;
+}
