@@ -64,6 +64,10 @@ a {
     font-style: normal;
 }
 
+#exbox {
+    padding-bottom: 50px;
+}
+
 h2 {
     font-family: 'GangwonEduPowerExtraBoldA';
     text-align: center;
