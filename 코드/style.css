@@ -125,28 +125,63 @@ ul.imgs li{
 
 /* clock__graph */
 
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .clock__graph {
     position: relative;
     padding: 5%;
     background-color: white;
-}
-.clock__container {
-    display: flex;
+    text-align: center;
     
+}
+.clock__text_box {
+    width: 200px;
+    margin: auto;
+    text-align: center;
+}
+.clock__text_box div {
+    position: relative;
+    display: inline-block;
+}
+.clock__graph h1 {
+    display: flex;
+    width: 200px;
+    padding: 2px 16px;
+    cursor: pointer;
+    font-family: 'GangwonEduPowerExtraBoldA';
+}
+.clock__text {
+    display: none;
+    width: auto;
+    padding: 8px;
+    left: 0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background: #dedede;
+    color: rgb(37, 34, 34);
+    font-size: 14px;
+    font-weight:500;
+}
+
+.clock__text_box h1:hover + .clock__text{
+    display: block;
 }
 .graph__container{
     display: flex;
     gap: 50px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    float: right;
- 
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    justify-content: center;
 }
-.clock__container h1 {
-    font-family: ;
-    font-size: 30px;
-    font-weight: inherit;
-    margin-top: 100px;
+.clock__graph span {
+    float: left;
 }
 .chart {
     position: relative;
