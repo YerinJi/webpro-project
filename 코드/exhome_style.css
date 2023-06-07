@@ -1,4 +1,3 @@
-/* nav bar */
 body {
     background-color : #F5F5F5;
 }
@@ -22,7 +21,6 @@ li.nav__list__item span{
     color: black;
 }
 li.nav__list__item span:hover{
-    font-size: 20px;
     color: #39C08F;
     font-weight: bold;
 }
@@ -81,3 +79,18 @@ img:hover {
     margin-bottom: 30px;
 }
 
+/* page 변경 div */
+.page-updown {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    column-gap: 4px;
+    margin-bottom: 40px;
+}
+button {
+    border: 0;
+    background-color:#F5F5F5;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+}
