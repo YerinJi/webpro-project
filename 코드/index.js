@@ -1,3 +1,48 @@
+// home introduce img
+$('.nudge__img .page-nav > div').click(function(){
+  var $this = $(this);
+  var $pagenav = $this.parent()
+  var $current = $pagenav.find('.active');
+    
+  $current.removeClass('active');
+  $this.addClass('active');
+
+  var index = $this.index();
+  var $슬라이더 = $this.closest('.nudge__img');
+    
+  $슬라이더.find('.slides > div.active').removeClass('active');
+  $슬라이더.find('.slides > div').eq(index).addClass('active');
+});
+
+$('.nudge__img > .side-btns > div:first-child').click(function() {
+  var $this = $(this);
+  var $slider = $this.closest('.nudge__img');
+  
+  var $current = $slider.find('.page-nav > div.active');
+  var $post = $current.prev();
+  
+  if ( $post.length == 0 ) {
+      $post = $slider.find('.page-nav > div:last-child');
+  }
+  
+  $post.click();
+});
+
+$('.nudge__img > .side-btns > div:last-child').click(function() {
+  var $this = $(this);
+  var $slider = $this.closest('.nudge__img');
+  
+  var $current = $slider.find('.page-nav > div.active');
+  var $post = $current.next();
+  
+  if ( $post.length == 0 ) {
+      $post = $slider.find('.page-nav > div:first-child');
+  }
+  
+  $post.click();
+});
+
+// graph
 const chart1 = document.querySelector('.graph1');
 const chart2 = document.querySelector('.graph2');
 const chart3 = document.querySelector('.graph3');
