@@ -50,3 +50,52 @@ nav {
 a { 
     text-decoration-line: none;
 }
+/* book */
+.book__box{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.book__box h1{
+    font-size: 30px;
+}
+.book_block{
+    text-align: center;
+}
+figure {
+    transition: opacity 0.2s; 
+    position: relative; 
+    margin: 0;
+    max-width: 20%;
+    display: inline-block;
+    padding: 40px;
+    padding-bottom: 10px;
+}
+figure img {
+    width: 260px;
+    height: 350px;
+}
+figure figcaption {
+    color: #fff;
+    bottom: 70px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    transition: all .3s ease;
+}
+figure .book__boxes {
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+}
+figure:hover .book__boxes {
+    background-color: #000;
+}
+figure:hover img {
+    opacity: 0.15;
+    cursor: pointer;
+}
+figure:hover figcaption {
+    opacity: 1;
+    transition: all .3s ease;
+}

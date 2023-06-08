@@ -222,7 +222,7 @@ span.center {
 .ex_title{
     padding-left: 40px;
     padding-right: 40px;
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'GangwonEduPowerExtraBoldA';
 }
 
@@ -265,7 +265,22 @@ span.center {
 .img img{
     height: 150px;
 }
-
+.btn button{
+    background-color:#39C08F;
+    border-color: #39C08F;
+    color: #fff;
+    border-radius: 4px;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
 /* Book */
 .book_list li {
     list-style: none;
