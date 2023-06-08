@@ -63,6 +63,7 @@ a {
     overflow: hidden;
     display: block;
     padding-bottom: 20px;
+    padding-top: 3px;
     border-bottom: 1px solid #d4d4d4;
 }
 .text2{
