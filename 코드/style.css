@@ -332,3 +332,27 @@ span.center {
     height: 400px;
 }
 /* 공모전 */
+.item__section{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.item__box{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.item {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+    text-align: center;
+    
+}
+.item img {
+    height: 400px;
+    width: 300px;
+    
+}
