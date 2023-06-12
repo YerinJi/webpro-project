@@ -50,7 +50,7 @@ const chart1 = document.querySelector('.graph1');
 const chart2 = document.querySelector('.graph2');
 const chart3 = document.querySelector('.graph3');
 const chart4 = document.querySelector('.graph4');
-
+var isVisible = false;
 
 
 const makeChart = (percent, classname, color) => {
@@ -69,10 +69,26 @@ const colorFn = (i, classname, color) => {
     classname.style.background = "conic-gradient(" + color + " 0% " + i + "%, #dedede " + i + "% 100%)";
 }
 
-makeChart(77.322, chart1, '#39C08F');
-makeChart(80.496, chart2, '#39C08F');
-makeChart(79.53, chart3, '#39C08F');
-makeChart(60, chart4, '#dedede');
+$(window).on('scroll', function(){
+  if (checkVisible($('.clock__graph'))&&!isVisible) {
+    makeChart(77.322, chart1, '#39C08F');
+    makeChart(80.496, chart2, '#39C08F');
+    makeChart(79.53, chart3, '#39C08F');
+    makeChart(60, chart4, '#dedede');
+    isVisible = true;
+  }
+});
+function checkVisible( elm, eval ) {
+  eval = eval || "object visible";
+  var viewportHeight = $(window).height(), 
+      scrolltop = $(window).scrollTop(), 
+      y = $(elm).offset().top,
+      elementHeight = $(elm).height();   
+  
+  if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+  if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+}
+
 
 // book
 var slides = document.querySelector('.book_list'),
