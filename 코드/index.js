@@ -41,6 +41,9 @@ $('.nudge__img > .side-btns > div:last-child').click(function() {
   
   $post.click();
 });
+// intro
+
+
 
 // graph
 const chart1 = document.querySelector('.graph1');

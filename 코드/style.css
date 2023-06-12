@@ -9,6 +9,7 @@ div.title {
     margin-top: 10px;
     margin-left: 20px;
     margin-bottom: 20px;
+    font-family: 'GangwonEduPowerExtraBoldA';
     
 }
 li.nav__list__item {
@@ -52,83 +53,81 @@ a {
 }
 
 /* nudge img */
-.nudge__img{
-    height: 400px;
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.intro__section{
+    padding: 20px 0 0px;
+
+}
+.intro_container{
+    width: 100%;
+    max-width: 1440px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
     position: relative;
 }
-
-.nudge__img .slides > div {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-.nudge__img .slides > div.active{
-    opacity: 1;
-}
-.nudge__img .page-nav{
-    position: absolute;
-    width: 100%;
+.intro_title{
     text-align: center;
-    bottom: 0;
-    left: 0;
+    font-size: 60px;
+    margin-bottom: 150px;
 }
-.nudge__img .page-nav > div {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 2px;
-    cursor: pointer;
+.intro__section ul, li{
+    padding: 0;
+    margin: 0;
 }
-.nudge__img .page-nav > div.active {
-    background-color: rgba(255, 255, 255, 1);
+.intro_title h2{
+    margin-bottom: 0px;
+    color: #39C08F;
+    font-family: 'Pretendard-Regular';
 }
-.nudge__img>.side-btns>div{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30%;
-    height: 100%;
-    cursor: pointer;
-    z-index: 10;
+.intro_title p{
+    margin-top: 0px;
+    color: #9FACBD;
+    font-family: 'Pretendard-Regular';
 }
-.nudge__img>.side-btns>div>span:active{
-    transform: translateY(-40%);
+.intro__section .intro_box{
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
 }
-.nudge__img>.side-btns>div:last-child{
-    left:auto;
-    right:0;
-}
-.nudge__img>.side-btns>div>span{
-    position:absolute;
-    top:50%;
-    transform:translatey(-50%);
-    left:inherit;
-    right:inherit;
-    width:70px;
-    height:70px;
-    background-color:rgba(255,255,255,0.4);
-    border-radius:100%;
-    margin:0 10px;
-}
-.nudge__img>.side-btns>div>span > i{
-    position:absolute;
-    top:50%;
-    left:50%;
-    font-size:3rem;
-    color:rgba(0,0,0,0.4);
-    transform:translateX(-70%) translateY(-50%);
-}
-.nudge__img>.side-btns>div:last-child>span > i {
-    transform:translateX(-20%) translateY(-50%);
+.intro__section .intro_box .intro_txt_box{
+    width: 50%;
 }
 
+.intro_txt_box h3{
+    font-size: 40px;
+}
+.intro_txt_box p{
+    font-size: 25px;
+    font-family: 'Pretendard-Regular';
+    
+}
+.intro_img{
+    width: 40%;
+    padding-right: 30px;
+    min-width: 400px;
+    max-width: 100%;
+    text-align: center;
+}
+.intro_box.re{
+    flex-flow: row-reverse;
+    justify-content: center;
+}
+
+.green{
+    color: #39C08F;
+}
+.red{
+    color: red;
+}
 /* clock__graph */
 
 @font-face {
