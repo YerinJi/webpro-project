@@ -3,10 +3,10 @@ body {
 }
 div.title{
     display: inline-block;
+    font-family: 'Pretendard-Regular';
 }
-
 div.title {
-    margin-top: 10px;
+    margin-top: 30px;
     margin-left: 20px;
     margin-bottom: 20px;
     
@@ -19,6 +19,7 @@ li.nav__list__item {
 }
 li.nav__list__item span{
     color: black;
+    
 }
 li.nav__list__item span:hover{
     color: #39C08F;
@@ -30,9 +31,8 @@ ul {
 }
 nav {
     position:absolute;
-    top: 0;
-    right: 0;
-    padding: 25px;
+    top: 20px;
+    right: 40px;
 }
 .menu {
     font-size: 20px;
@@ -44,11 +44,33 @@ nav {
     color: #39C08F;
 }
 #title_2 {
+    
     color: #9FACBD;
 }
 
 a { 
     text-decoration-line: none;
+}
+.home__header{
+    top: 0;
+    margin: 0 auto;
+    background-color: #F5F5F5;
+    width: 100%;
+    z-index: 99;
+    position: absolute;
+    height: 80px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.home__header{
+    position: fixed;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
 }
 /* title */
 .news_title__box {

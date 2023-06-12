@@ -3,13 +3,12 @@ body {
 }
 div.title{
     display: inline-block;
+    font-family: 'Pretendard-Regular';
 }
-
 div.title {
-    margin-top: 10px;
+    margin-top: 30px;
     margin-left: 20px;
     margin-bottom: 20px;
-    font-family: 'GangwonEduPowerExtraBoldA';
     
 }
 li.nav__list__item {
@@ -20,6 +19,7 @@ li.nav__list__item {
 }
 li.nav__list__item span{
     color: black;
+    
 }
 li.nav__list__item span:hover{
     color: #39C08F;
@@ -31,9 +31,8 @@ ul {
 }
 nav {
     position:absolute;
-    top: 0;
-    right: 0;
-    padding: 25px;
+    top: 20px;
+    right: 40px;
 }
 .menu {
     font-size: 20px;
@@ -45,14 +44,29 @@ nav {
     color: #39C08F;
 }
 #title_2 {
+    
     color: #9FACBD;
 }
 
 a { 
     text-decoration-line: none;
 }
-
-/* nudge img */
+.home__header{
+    top: 0;
+    margin: 0 auto;
+    background-color: #F5F5F5;
+    width: 100%;
+    z-index: 99;
+    position: absolute;
+    height: 80px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.home__header{
+    position: fixed;
+}
+/* intro */
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -61,7 +75,7 @@ a {
 }
 
 .intro__section{
-    padding: 20px 0 0px;
+    padding: 90px 0 0px;
 
 }
 .intro_container{
@@ -75,7 +89,7 @@ a {
 .intro_title{
     text-align: center;
     font-size: 60px;
-    margin-bottom: 150px;
+    margin-bottom: 110px;
 }
 .intro__section ul, li{
     padding: 0;
@@ -101,17 +115,28 @@ a {
 .intro__section .intro_box .intro_txt_box{
     width: 50%;
 }
-
+.intro_txt_box1{
+    text-align: center;
+}
+.intro_txt_box1 h3{
+    font-size: 30px;
+    font-family: 'Pretendard-Regular';
+}
+.intro_txt_box1 p{
+    font-size: 20px;
+    font-family: 'Pretendard-Regular';
+}
 .intro_txt_box h3{
-    font-size: 40px;
+    font-size: 30px;
+    font-family: 'Pretendard-Regular';
 }
 .intro_txt_box p{
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Pretendard-Regular';
     
 }
 .intro_img{
-    width: 40%;
+    width: 50%;
     padding-right: 30px;
     min-width: 400px;
     max-width: 100%;
@@ -338,6 +363,7 @@ span.center {
     
 }
 .item__box{
+    width: 1600px;
     display: block;
     text-align: center;
     margin: 0 auto;
