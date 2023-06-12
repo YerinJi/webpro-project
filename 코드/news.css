@@ -78,6 +78,7 @@ a {
     padding-right: 150px;
     display: block;
     margin-bottom: 60px;
+    padding-top: 90px;
 }
 .news_title__box h1 {
     font-size: 30px;
@@ -130,4 +131,28 @@ p {
     display: block;
     font-size: 20px;
     padding-bottom: 5px;
+}
+/* footer */
+footer {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #F5F5F5;
+    border-top: 1px solid #d4d4d4;
+    padding: 20px 0 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+footer p{
+    margin-bottom: 12px;
+    font-family: 'Pretendard-Regular';
+}
+.me_txt {
+    text-align: center;
+}
+footer a{
+    font-size: 35px;
 }
