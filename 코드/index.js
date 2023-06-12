@@ -62,7 +62,7 @@ const makeChart = (percent, classname, color) => {
         } else {
             clearInterval(chartFn);
         }
-    }, 10);
+    }, 15);
 }
 
 const colorFn = (i, classname, color) => {
