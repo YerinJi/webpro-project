@@ -378,7 +378,33 @@ span.center {
     
 }
 .item img {
-    height: 400px;
+    height: 350px;
     width: 300px;
-    
+    transition: all 0.2s linear;
+}
+.item:hover img{
+    transform: scale(1.2);
+}
+/* footer */
+footer {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+    padding: 50px 0 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+footer p{
+    margin-bottom: 12px;
+    font-family: 'Pretendard-Regular';
+}
+.me_txt {
+    text-align: center;
+}
+footer a{
+    font-size: 35px;
 }
